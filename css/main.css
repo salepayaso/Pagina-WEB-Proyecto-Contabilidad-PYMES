@@ -84,7 +84,8 @@ img {
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: var(--color-text-inverted);
+    color: #ffffff !important;
+    /* Force white text for contrast */
 }
 
 .btn-primary:hover {
@@ -101,7 +102,7 @@ img {
 
 .btn-outline:hover {
     background-color: var(--color-primary);
-    color: var(--color-text-inverted);
+    color: #ffffff !important;
 }
 
 /* Header & Nav */
@@ -124,12 +125,16 @@ img {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--color-primary);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    /* Removed text styles as we now use an image */
+}
+
+.logo img {
+    height: 60px;
+    /* Increased from 50px inline style */
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
