@@ -29,7 +29,15 @@ git commit -m "Escribe aquí tu mensaje entre comillas"
 ```
 *Ejemplo: `git commit -m "Actualicé la página de servicios"`*
 
-## 4. Revisar el historial
+## 4. Subir a Internet (GitHub)
+Una vez guardado en tu computador (commit), debes enviarlo a la nube.
+
+Comando:
+```bash
+git push
+```
+
+## 5. Revisar el historial
 Para ver los guardados anteriores y confirmar que el tuyo se hizo.
 
 Comando:
@@ -45,4 +53,11 @@ Verás una lista con códigos amarillos (ej. `855d499`) y tus mensajes.
 2.  Abres la terminal.
 3.  Escribes `git add .` (Enter).
 4.  Escribes `git commit -m "Avance del día"` (Enter).
-5.  ¡Listo!
+5.  **Subir a Internet (GitHub)**
+    Para que tus cambios se vean en la página web de GitHub.
+    ```bash
+    git push
+    ```
+    *(Solo necesitas escribir esto una vez al día o cuando quieras respaldar en la nube)*
+
+6.  ¡Listo!
