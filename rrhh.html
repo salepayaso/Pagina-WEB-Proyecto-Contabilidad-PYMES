@@ -4,7 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos Humanos | Contabilidad CMP</title>
+    <title>Gestión de RRHH y Remuneraciones | Contabilidad CMP</title>
+    <meta name="description"
+        content="Externaliza tu RRHH con nosotros. Gestión de contratos, liquidaciones de sueldo, leyes sociales y cotizaciones. Evita multas y ahorra tiempo.">
+    <meta name="keywords"
+        content="externalización rrhh, liquidaciones de sueldo, contratos de trabajo, leyes sociales, gestión personal, previred">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.contabilidadcmp.cl/rrhh.html">
+    <meta property="og:title" content="Gestión de Recursos Humanos | Contabilidad CMP">
+    <meta property="og:description"
+        content="Nos encargamos de tus contratos, sueldos y leyes sociales. Cumplimiento laboral garantizado.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/salepayaso/Pagina-WEB-Proyecto-Contabilidad-PYMES/main/assets/images/logo%20solo%20letras.png">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
         rel="stylesheet">
@@ -31,11 +45,19 @@
         </div>
     </header>
 
-    <section class="section" style="background-color: var(--color-accent); color: white; padding: 4rem 0;">
-        <div class="container text-center">
-            <h1>Servicios de Recursos Humanos para PyMEs</h1>
-            <p style="max-width: 700px; margin: 0 auto; opacity: 0.9;">Complementa tu gestión contable con soluciones
-                eficientes para tu equipo. Nos encargamos de tu capital humano.</p>
+    <!-- Hero Header with Image -->
+    <section style="position: relative; background: linear-gradient(135deg, rgba(5, 150, 105, 0.92) 0%, rgba(4, 120, 87, 0.92) 100%), 
+                    url('assets/images/marketing personas hablando blanco y negro.jpg') center/cover no-repeat; 
+                    color: white; padding: 6rem 0; min-height: 400px; display: flex; align-items: center;">
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                Servicios de Recursos Humanos para PyMEs
+            </h1>
+            <p
+                style="max-width: 700px; margin: 0 auto; opacity: 0.95; font-size: 1.25rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+                Complementa tu gestión contable con soluciones eficientes para tu equipo. Nos encargamos de tu capital
+                humano.
+            </p>
         </div>
     </section>
 
@@ -93,23 +115,23 @@
     <section class="section" style="background-color: var(--color-bg-light);">
         <div class="container text-center">
             <h2 class="text-primary" style="margin-bottom: 3rem;">Beneficios de Externalizar tu RR.HH.</h2>
-            <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
-                <div>
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 3rem;">
+                <div style="flex: 1; min-width: 250px; max-width: 350px;">
                     <i class="fas fa-clock"
-                        style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
-                    <h3>Ahorro de Tiempo</h3>
+                        style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem;">Ahorro de Tiempo</h3>
                     <p>Dedícate a tu negocio, nosotros vemos la burocracia.</p>
                 </div>
-                <div>
+                <div style="flex: 1; min-width: 250px; max-width: 350px;">
                     <i class="fas fa-shield-alt"
-                        style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
-                    <h3>Tranquilidad</h3>
+                        style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem;">Tranquilidad</h3>
                     <p>Cumplimiento laboral garantizado.</p>
                 </div>
-                <div>
+                <div style="flex: 1; min-width: 250px; max-width: 350px;">
                     <i class="fas fa-check-double"
-                        style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
-                    <h3>Eficiencia</h3>
+                        style="font-size: 3rem; color: var(--color-primary); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem;">Eficiencia</h3>
                     <p>Procesos optimizados y sin errores.</p>
                 </div>
             </div>
@@ -140,11 +162,31 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/56976004926?text=Hola,%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
-        class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <script src="js/main.js"></script>
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-widget">
+        <div class="whatsapp-chat-bubble" id="whatsappBubble">
+            <div class="chat-header">
+                <h4>Contabilidad CMP</h4>
+                <button class="close-chat" id="closeChat">×</button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message">
+                    <p><strong>Hola</strong></p>
+                    <p>¿En qué podemos ayudarte?</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <a href="https://wa.me/56976004926?text=Hola,%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+                    class="btn-open-chat" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Abrir chat
+                </a>
+            </div>
+        </div>
+        <button class="whatsapp-float" id="whatsappBtn">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
 </body>
 
 </html>

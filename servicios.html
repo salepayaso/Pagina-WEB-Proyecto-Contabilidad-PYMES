@@ -4,7 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Contables | Contabilidad CMP</title>
+    <title>Servicios Contables y Tributarios | Contabilidad CMP</title>
+    <meta name="description"
+        content="Ofrecemos gestión contable integral, cumplimiento tributario (F29, Renta) y asesoría financiera con software especializado para tu PyME.">
+    <meta name="keywords"
+        content="servicios contables, declaración renta, f29, balance general, contabilidad mensual, asesoría tributaria">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.contabilidadcmp.cl/servicios.html">
+    <meta property="og:title" content="Servicios Contables | Contabilidad CMP">
+    <meta property="og:description"
+        content="Cumplimiento tributario, gestión contable y asesoría financiera para optimizar tu negocio.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/salepayaso/Pagina-WEB-Proyecto-Contabilidad-PYMES/main/assets/images/logo%20solo%20letras.png">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
         rel="stylesheet">
@@ -147,11 +161,31 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/56976004926?text=Hola,%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
-        class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <script src="js/main.js"></script>
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-widget">
+        <div class="whatsapp-chat-bubble" id="whatsappBubble">
+            <div class="chat-header">
+                <h4>Contabilidad CMP</h4>
+                <button class="close-chat" id="closeChat">×</button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message">
+                    <p><strong>Hola</strong></p>
+                    <p>¿En qué podemos ayudarte?</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <a href="https://wa.me/56976004926?text=Hola,%20contacto%20desde%20su%20p%C3%A1gina%20web.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+                    class="btn-open-chat" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Abrir chat
+                </a>
+            </div>
+        </div>
+        <button class="whatsapp-float" id="whatsappBtn">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
 </body>
 
 </html>
