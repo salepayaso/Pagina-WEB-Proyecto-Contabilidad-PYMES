@@ -49,15 +49,18 @@ Verás una lista con códigos amarillos (ej. `855d499`) y tus mensajes.
 ---
 
 ### Resumen del flujo de trabajo diario:
+
+**1. Guardar en tu Computador (Local):**
 1.  Haces cambios en tus archivos.
-2.  Abres la terminal.
-3.  Escribes `git add .` (Enter).
-4.  Escribes `git commit -m "Avance del día"` (Enter).
-5.  **Subir a Internet (GitHub)**
-    Para que tus cambios se vean en la página web de GitHub.
-    ```bash
-    git push
-    ```
-    *(Solo necesitas escribir esto una vez al día o cuando quieras respaldar en la nube)*
+2.  `git add .` (Prepara todo)
+3.  `git commit -m "Mensaje"` (Guarda la foto en tu PC)
+
+**2. Subir a Internet (Nube):**
+4.  `git push` (Envía tus cambios guardados a GitHub)
+
+> **💡 REGLA DE ORO:**
+> *   **`git commit`** = Guardar en tu PC (Como "Guardar" en Word).
+> *   **`git push`** = Publicar en GitHub (Como "Enviar correo").
+> *   *Si no haces Push, nadie más verá tus cambios.*
 
 6.  ¡Listo!
