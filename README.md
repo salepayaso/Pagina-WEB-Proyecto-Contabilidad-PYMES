@@ -1,44 +1,63 @@
 # Proyecto Web Contabilidad CMP
 
-Este es el sitio web estático para Contabilidad CMP, desarrollado con HTML5, CSS3 y JavaScript moderno.
+Sitio web corporativo moderno para **Contabilidad CMP**, optimizado para SEO local y diseñado para convertir visitantes en clientes a través de WhatsApp.
 
-## Estructura del Proyecto
+## 🚀 Características Principales
+
+*   **Diseño Profesional:** Estilo visual moderno con imágenes de alta calidad y paleta de colores corporativa.
+*   **Widget de WhatsApp Interactivo:** Funcionalidad de chat integrada en todas las páginas para contacto directo sin branding de terceros.
+*   **Optimización SEO:**
+    *   Etiquetas Meta (Título, Descripción, Keywords) optimizadas para "Contador en La Granja".
+    *   Open Graph tags para compartir profesionalmente en Redes Sociales.
+    *   `sitemap.xml` y `robots.txt` listos para Google.
+*   **Responsive:** Adaptado perfectamente a celulares, tablets y computadores.
+*   **Velocidad:** Código limpio HTML5/CSS3 sin dependencias pesadas.
+
+## 📂 Estructura del Proyecto
 
 ```
 /
-├── index.html        # Página de inicio
-├── nosotros.html     # Quiénes somos (Historia, Misión, Visión)
-├── servicios.html    # Servicios contables y financieros
-├── rrhh.html         # Servicios de Recursos Humanos
-├── contacto.html     # Formulario y datos de contacto
+├── index.html        # Portada (Propuesta de valor y servicios clave)
+├── nosotros.html     # Historia, Misión y Equipo
+├── servicios.html    # Detalle de contabilidad y tributaria
+├── rrhh.html         # Servicios de Remuneraciones (con sección de beneficios)
+├── contacto.html     # Datos de ubicación y contacto
+├── sitemap.xml       # Mapa del sitio para Google
+├── robots.txt        # Configuración para buscadores
 ├── css/
-│   ├── variables.css # Paleta de colores y variables globales
-│   └── main.css      # Estilos principales del sitio
+│   └── main.css      # Estilos globales y específicos
 ├── js/
-│   └── main.js       # Lógica JavaScript (actualmente solo inicialización)
-└── assets/           # Imágenes e iconos
+│   └── main.js       # Lógica del widget de WhatsApp
+└── assets/           # Imágenes optimizadas y logos
 ```
 
-## Cómo Visualizar el Sitio
+## 📚 Documentación y Guías del Proyecto
 
-Al ser un sitio estático, no necesitas instalar servidores complejos ni bases de datos.
+Se han creado guías paso a paso para la administración de la presencia digital de la empresa:
 
-1. Navega a la carpeta del proyecto.
-2. Haz doble clic en el archivo `index.html`.
-3. El sitio se abrirá en tu navegador web predeterminado.
+1.  **[Guía de GitHub](GUIA_GIT.md):** Cómo guardar cambios y subir el sitio a la nube.
+2.  **[Guía de Google Maps](GUIA_GOOGLE_MAPS.md):** Cómo aparecer primero en el mapa local.
+3.  **[Estrategia de Redes Sociales](GUIA_REDES_SOCIALES.md):** Qué publicar en Instagram/Facebook.
+4.  **[Recomendación Google Ads](RECOMENDACION_GOOGLE_ADS.md):** Cuándo invertir en publicidad pagada.
+5.  **[Guía de Correo Corporativo](GUIA_CORREO_CORPORATIVO.md):** Cómo tener mail `@contabilidadcmp.cl` gratis.
+6.  **[Informe de Optimización](INFORME_OPTIMIZACION.md):** Guía para reducir el peso de las imágenes.
 
-## Personalización
+## 🛠️ Cómo Editar y Publicar
 
-- **Colores:** Puedes cambiar la paleta de colores editando el archivo `css/variables.css`.
-- **Imágenes:** Coloca tus imágenes reales en la carpeta `assets/images` y actualiza las rutas en los archivos HTML.
-- **Textos:** Edita directamente los archivos HTML para modificar el contenido.
+### Editar el Sitio
+1.  Abre la carpeta en **Visual Studio Code**.
+2.  Edita los archivos `.html` (textos) o `.css` (colores/diseño).
+3.  Para ver cambios, simplemente abre `index.html` en tu navegador.
 
-## Despliegue (Hosting)
-
-Este sitio está listo para ser publicado en servicios gratuitos de hosting estático como:
-- **GitHub Pages**
-- **Netlify** (Arrastrar y soltar la carpeta)
-- **Vercel**
+### Publicar en Internet
+El sitio está configurado para **GitHub Pages** (Hosting Gratuito):
+1.  Sube tus cambios a GitHub:
+    ```bash
+    git add .
+    git commit -m "Descripción de cambios"
+    git push origin main
+    ```
+2.  Tu sitio se actualizará automáticamente en tu URL de GitHub Pages (o dominio personalizado si ya está configurado).
 
 ---
-Desarrollado para Contabilidad CMP.
+© 2024 Contabilidad CMP. Desarrollado con estándares web modernos.
