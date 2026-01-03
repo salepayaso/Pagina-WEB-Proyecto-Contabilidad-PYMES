@@ -105,7 +105,47 @@ img {
     color: #ffffff !important;
 }
 
-/* Header & Nav */
+/* =========================================
+   Financial Indicators
+   ========================================= */
+.indicadores-bar {
+    background-color: var(--color-primary-dark);
+    color: white;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.indicadores-content {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.indicadores-content span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.indicadores-content span i {
+    color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+    .indicadores-content {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* =========================================
+   Header & Navigation
+   ========================================= */
 .main-header {
     background-color: var(--color-bg-white);
     height: var(--header-height);

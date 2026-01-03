@@ -40,7 +40,8 @@ Se han creado guías paso a paso para la administración de la presencia digital
 3.  **[Estrategia de Redes Sociales](GUIA_REDES_SOCIALES.md):** Qué publicar en Instagram/Facebook.
 4.  **[Recomendación Google Ads](RECOMENDACION_GOOGLE_ADS.md):** Cuándo invertir en publicidad pagada.
 5.  **[Guía de Correo Corporativo](GUIA_CORREO_CORPORATIVO.md):** Cómo tener mail `@contabilidadcmp.cl` gratis.
-6.  **[Informe de Optimización](INFORME_OPTIMIZACION.md):** Guía para reducir el peso de las imágenes.
+6.  **[Cómo Publicar la Web](GUIA_PUBLICAR_WEB.md):** Pasos para activar el link público.
+7.  **[Informe de Optimización](INFORME_OPTIMIZACION.md):** Guía para reducir el peso de las imágenes.
 
 ## 🛠️ Cómo Editar y Publicar
 

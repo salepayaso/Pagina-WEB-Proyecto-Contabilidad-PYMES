@@ -28,6 +28,17 @@
 
 <body>
 
+    <!-- Financial Indicators Bar -->
+    <div id="indicadores-bar" class="indicadores-bar">
+        <div class="container indicadores-content">
+            <span id="current-date" style="margin-right: auto; font-size: 0.85rem; opacity: 0.9;"></span>
+            <span><i class="fas fa-chart-line"></i> Indicadores:</span>
+            <span id="ind-uf">UF: ...</span>
+            <span id="ind-utm">UTM: ...</span>
+            <span id="ind-dolar">Dólar: ...</span>
+        </div>
+    </div>
+
     <header class="main-header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
@@ -52,10 +63,10 @@
                 <p>Estamos aquí para resolver tus dudas y potenciar tu negocio.</p>
             </div>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 4rem;">
-
-                <!-- Contact Info -->
-                <div style="flex: 1; min-width: 300px;">
+            <!-- Flex Container for Desktop -->
+            <div style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: center;">
+                <!-- Contact Info Column -->
+                <div style="flex: 1; min-width: 300px; max-width: 500px;">
                     <div style="background-color: var(--color-bg-light); padding: 2rem; border-radius: 8px;">
                         <h3 style="margin-bottom: 2rem;">Información de Contacto</h3>
 
@@ -104,19 +115,20 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div style="flex: 1.5; min-width: 300px;">
-                    <form
+                <div style="flex: 1; min-width: 300px; max-width: 500px;">
+                    <!-- FORMSPREE INTEGRATION: Replace with your unique Formspree ID -->
+                    <form action="https://formspree.io/f/xdakzvvq" method="POST"
                         style="display: grid; gap: 1.5rem; background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-sm); border: 1px solid #e5e7eb;">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                             <div>
                                 <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nombre
                                     Completo</label>
-                                <input type="text" placeholder="Tu nombre"
+                                <input type="text" name="nombre" placeholder="Tu nombre" required
                                     style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
                             </div>
                             <div>
                                 <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Empresa</label>
-                                <input type="text" placeholder="Nombre de tu empresa"
+                                <input type="text" name="empresa" placeholder="Nombre de tu empresa"
                                     style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
                             </div>
                         </div>
@@ -125,23 +137,26 @@
                             <div>
                                 <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Correo
                                     Electrónico</label>
-                                <input type="email" placeholder="ejemplo@correo.com"
+                                <input type="email" name="email" placeholder="ejemplo@correo.com" required
                                     style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
                             </div>
                             <div>
                                 <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Teléfono</label>
-                                <input type="tel" placeholder="+56 9 ..."
+                                <input type="tel" name="telefono" placeholder="+56 9 ..."
                                     style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
                             </div>
                         </div>
 
                         <div>
                             <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Asunto</label>
-                            <select
+                            <select name="asunto"
                                 style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                                <option>Consulta General</option>
+                                <option>Contabilidad Mensual</option>
+                                <option>Recursos Humanos</option>
+                                <option>Declaración de Renta</option>
                                 <option>Solicitar Cotización</option>
                                 <option>Consulta Contable</option>
-                                <option>Recursos Humanos</option>
                                 <option>Otro</option>
                             </select>
                         </div>
