@@ -277,6 +277,19 @@ img {
     transform: scale(1.1);
 }
 
+.service-list {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+    color: var(--color-text-main);
+    text-align: left;
+}
+
+.service-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
 /* Footer */
 .main-footer {
     background-color: #111827;
