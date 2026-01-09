@@ -24,6 +24,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -44,6 +45,9 @@
             <a href="index.html" class="logo">
                 <img src="assets/images/logo solo letras.png" alt="Contabilidad CMP Logo">
             </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
@@ -56,67 +60,162 @@
         </div>
     </header>
 
-    <section class="section" style="background-color: var(--color-primary); color: white; padding: 4rem 0;">
+    <section class="section"
+        style="position: relative; background: linear-gradient(135deg, rgba(30, 64, 175, 0.90) 0%, rgba(30, 58, 138, 0.85) 100%), url('assets/images/Finanzas moneda con planta.jpg') center/cover no-repeat; color: white; padding: 6rem 0;">
         <div class="container text-center">
             <h1>Servicios Contables y Financieros para tu PyME</h1>
-            <p style="max-width: 700px; margin: 0 auto; opacity: 0.9;">Apoyamos tu crecimiento con un sistema contable
+            <p style="max-width: 700px; margin: 0 auto; opacity: 0.95; font-size: 1.2rem;">Apoyamos tu crecimiento con
+                un sistema contable
                 eficiente y un equipo experto.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
+
+            <!-- Operación Renta Special Section -->
+            <div id="renta-2026" style="margin-bottom: 5rem;">
+                <div
+                    style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 3rem 2rem; position: relative; overflow: hidden;">
+
+                    <div class="text-center" style="margin-bottom: 3rem;">
+                        <span
+                            style="background-color: var(--color-primary); color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Nuevo</span>
+                        <h2 class="text-primary" style="margin-top: 1.5rem; font-size: 2.2rem;">Servicios Operación
+                            Renta AT 2026</h2>
+
+                        <!-- Novedades Alert -->
+                        <div
+                            style="background-color: #fffbeb; border-left: 4px solid #f59e0b; padding: 1.5rem; margin: 2rem auto; max-width: 800px; text-align: left; border-radius: 4px;">
+                            <p style="color: #92400e; font-weight: 500; margin: 0;">
+                                <i class="fas fa-exclamation-triangle" style="margin-right: 0.5rem;"></i>
+                                Atención PyMEs: Este año tributario incluye nuevos cruces de información por la
+                                <strong>Ley 21.713</strong> y aumento de retención en honorarios (15.25%). En CMP
+                                estamos preparados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                        <!-- Item 1 -->
+                        <div
+                            style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h4 style="color: var(--color-primary);"><i class="fas fa-file-contract"
+                                    style="margin-right: 0.5rem;"></i> 1. Declaraciones Juradas (DDJJ)</h4>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Recopilación y validación para el SII
+                                (Sueldos F1887, Honorarios F1879, etc.).</p>
+                            <p style="font-size: 0.85rem; color: #666;"><strong>Plazo:</strong> Febrero - Marzo 2026</p>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div
+                            style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h4 style="color: var(--color-primary);"><i class="fas fa-calendar-check"
+                                    style="margin-right: 0.5rem;"></i> 2. Formulario 22</h4>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Confección y presentación. Análisis de
+                                régimen (Pro Pyme 14 D3/D8) para optimizar impuestos.</p>
+                            <p style="font-size: 0.85rem; color: #666;"><strong>Plazo:</strong> Abril 2026</p>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div
+                            style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h4 style="color: var(--color-primary);"><i class="fas fa-chart-line"
+                                    style="margin-right: 0.5rem;"></i> 3. Capital Propio Tributario</h4>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Cálculo y cuadratura. Evitamos
+                                observaciones asegurando coincidencia con tu patrimonio.</p>
+                            <p style="font-size: 0.85rem; color: #666;"><strong>Foco:</strong> Fiscalización SII</p>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div
+                            style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h4 style="color: var(--color-primary);"><i class="fas fa-percentage"
+                                    style="margin-right: 0.5rem;"></i> 4. Nuevas Retenciones</h4>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Auditoría de boletas de honorarios
+                                para cumplir con la nueva tasa del <strong>15.25%</strong>.</p>
+                            <p style="font-size: 0.85rem; color: #666;"><strong>Importante:</strong> Ley 2026</p>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div
+                            style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h4 style="color: var(--color-primary);"><i class="fas fa-stethoscope"
+                                    style="margin-right: 0.5rem;"></i> 5. Pre-Renta y Diagnóstico</h4>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Simulación de cierre anual. Detección
+                                de gastos rechazados y proyección de flujo de caja.</p>
+                            <p style="font-size: 0.85rem; color: #666;"><strong>Ideal:</strong> Dic - Ene</p>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div
+                            style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                            <h4 style="color: var(--color-primary);"><i class="fas fa-gavel"
+                                    style="margin-right: 0.5rem;"></i> 6. Defensa Tributaria</h4>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.5rem;">Gestión de rectificatorias y
+                                representación ante el SII para liberar devoluciones.</p>
+                            <p style="font-size: 0.85rem; color: #666;"><strong>Solución:</strong> Rápida</p>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center" style="margin-top: 3rem;">
+                        <a href="contacto.html" class="btn btn-primary"
+                            style="font-size: 1.1rem; padding: 1rem 2rem;">Agendar Diagnóstico <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
             <div class="card-grid">
 
                 <div class="card">
-                    <div class="card-icon"><i class="fas fa-search-dollar"></i></div>
-                    <h3>RCV (Registro de Compras y Ventas)</h3>
-                    <p>Realizar revisión y cuadratura.</p>
+                    <div class="card-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Contabilidad Mensual y Cumplimiento Tributario</h3>
+                    <p>Gestión integral del ciclo contable mensual. Declaración de impuestos mensuales (F29), validación
+                        y cruce del Registro de Compras y Ventas (RCV) ante el SII, asegurando el cumplimiento
+                        tributario continuo.</p>
                 </div>
 
                 <div class="card">
-                    <div class="card-icon"><i class="fas fa-globe-americas"></i></div>
-                    <h3>Importaciones</h3>
-                    <p>Registros y contabilización de la importación.</p>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-receipt"></i></div>
-                    <h3>Gestión de Efectivo</h3>
-                    <p>Revisar procesos de rendición y cajas chicas.</p>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-hand-holding-usd"></i></div>
-                    <h3>Pasivos</h3>
-                    <p>Revisar la sección de préstamos bancarios.</p>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
-                    <h3>Estados Financieros</h3>
-                    <p>Revisar balance y corrección monetaria.</p>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-file-contract"></i></div>
-                    <h3>Gestión Tributaria</h3>
-                    <ul class="service-list">
-                        <li>Trámites tributarios generales.</li>
-                        <li>Término de giro.</li>
-                    </ul>
+                    <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Estados Financieros y Reportes</h3>
+                    <p>Confección de Estados Financieros bajo normativa vigente (PCGA / NIIF Pymes). Preparación de
+                        Balance Clasificado (situación financiera) y Estado de Resultados para presentación ante bancos,
+                        licitaciones y toma de decisiones.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon"><i class="fas fa-calculator"></i></div>
-                    <h3>Operación Renta y Balances</h3>
-                    <ul class="service-list">
-                        <li>Determinación de renta imponible.</li>
-                        <li>Declaraciones juradas (DDJJ).</li>
-                        <li>Declaración de renta (Formulario 22).</li>
-                        <li>Balance clasificado y Estado de resultados.</li>
-                        <li>Balance general tributario.</li>
-                    </ul>
+                    <h3>Operación Renta Anual</h3>
+                    <p>Planificación y ejecución del proceso anual de renta. Confección de Declaraciones Juradas (DDJJ),
+                        determinación de la Renta Líquida Imponible y presentación del Formulario 22 (F22), optimizando
+                        la carga fiscal dentro del marco legal.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Trámites y Gestión ante el SII</h3>
+                    <p>Asesoría y representación en trámites administrativos: Inicio de Actividades, modificaciones
+                        estatutarias, actualizaciones de información, peticiones administrativas y procesos de Término
+                        de Giro.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Regularización Contable</h3>
+                    <p>Diagnóstico y reconstrucción de contabilidades atrasadas o desordenadas. Limpieza de cuentas,
+                        conciliaciones pendientes y corrección de observaciones para regularizar la situación tributaria
+                        de la empresa.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Control de Gestión y Operaciones</h3>
+                    <p>Registro y control contable de operaciones específicas como Importaciones (comercio exterior),
+                        análisis de flujos de caja, conciliaciones bancarias y control de cuentas por pagar y cobrar.
+                    </p>
                 </div>
 
             </div>
@@ -148,7 +247,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Contabilidad CMP.</p>
+                <p>&copy; 2024 Contabilidad CMP. Todos los derechos reservados. | Diseñado por <strong>Interfaz
+                        360</strong></p>
             </div>
         </div>
     </footer>

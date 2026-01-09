@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -48,6 +49,9 @@
             <a href="index.html" class="logo">
                 <img src="assets/images/logo solo letras.png" alt="Contabilidad CMP Logo">
             </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
@@ -60,19 +64,24 @@
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="section" style="background-color: var(--color-primary); color: white; padding: 4rem 0;">
+    <!-- Page Header (Vanguard Design) -->
+    <!-- Page Header (Vanguard Design) -->
+    <section class="section"
+        style="position: relative; background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 58, 138, 0.8) 100%), url('assets/images/header-nosotros-v2.png') center/cover no-repeat; color: white; padding: 8rem 0; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
         <div class="container text-center">
-            <h1>Quiénes Somos en Contabilidad CMP</h1>
-            <p style="max-width: 700px; margin: 0 auto; opacity: 0.9;">Conoce nuestra historia y el equipo detrás de tu
-                éxito financiero.</p>
+            <span
+                style="display: inline-block; padding: 0.5rem 1rem; border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; margin-bottom: 1.5rem; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase;">Más
+                de 30 Años de Trayectoria</span>
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; font-weight: 700;">Innovación y Excelencia Contable</h1>
+            <p style="max-width: 700px; margin: 0 auto; opacity: 0.95; font-size: 1.25rem;">Transformamos la gestión
+                financiera de las PyMEs con tecnología de vanguardia y un equipo humano de alto nivel.</p>
         </div>
     </section>
 
     <!-- Historia -->
     <section class="section">
         <div class="container">
-            <div style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap;">
+            <div class="nosotros-flex-section" style="display: flex; gap: 4rem; align-items: center; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
                     <h2 class="text-primary">Nuestra Historia y Trayectoria</h2>
                     <p style="margin-bottom: 1rem;">Con más de 30 años de experiencia en el mercado chileno,
@@ -85,7 +94,7 @@
                 </div>
                 <!-- Business City Image -->
                 <div style="flex: 1; min-width: 300px;">
-                    <img src="assets/images/negocio Ciudad.jpg" alt="Negocios y Ciudad"
+                    <img src="assets/images/charles-forerunner-3fPXt37X6UQ-unsplash (1).jpg" alt="Negocios y Ciudad"
                         style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                 </div>
             </div>
@@ -249,7 +258,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Contabilidad CMP.</p>
+                <p>&copy; 2024 Contabilidad CMP. Todos los derechos reservados. | Diseñado por <strong>Interfaz
+                        360</strong></p>
             </div>
         </div>
     </footer>

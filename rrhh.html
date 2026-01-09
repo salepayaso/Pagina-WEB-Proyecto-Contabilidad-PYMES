@@ -24,6 +24,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -44,6 +45,9 @@
             <a href="index.html" class="logo">
                 <img src="assets/images/logo solo letras.png" alt="Contabilidad CMP Logo">
             </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
@@ -57,18 +61,13 @@
     </header>
 
     <!-- Hero Header with Image -->
-    <section style="position: relative; background: linear-gradient(135deg, rgba(5, 150, 105, 0.92) 0%, rgba(4, 120, 87, 0.92) 100%), 
-                    url('assets/images/marketing personas hablando blanco y negro.jpg') center/cover no-repeat; 
-                    color: white; padding: 6rem 0; min-height: 400px; display: flex; align-items: center;">
-        <div class="container text-center" style="position: relative; z-index: 2;">
-            <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
-                Servicios de Recursos Humanos para PyMEs
-            </h1>
-            <p
-                style="max-width: 700px; margin: 0 auto; opacity: 0.95; font-size: 1.25rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-                Complementa tu gestión contable con soluciones eficientes para tu equipo. Nos encargamos de tu capital
-                humano.
-            </p>
+
+    <section class="section"
+        style="position: relative; background: linear-gradient(135deg, rgba(6, 95, 70, 0.90) 0%, rgba(4, 120, 87, 0.85) 100%), url('assets/images/Negocio mesa con 2 personas.jpg') center/cover no-repeat; color: white; padding: 6rem 0;">
+        <div class="container text-center">
+            <h1>Servicios de Recursos Humanos para PyMEs</h1>
+            <p style="max-width: 700px; margin: 0 auto; opacity: 0.95; font-size: 1.2rem;">Complementa tu gestión
+                contable con soluciones eficientes para tu equipo. Nos encargamos de tu capital humano.</p>
         </div>
     </section>
 
@@ -77,38 +76,49 @@
             <div class="card-grid">
 
                 <div class="card">
-                    <div class="card-icon" style="color: var(--color-accent);"><i class="fas fa-users"></i></div>
-                    <h3>Remuneraciones y Nóminas</h3>
-                    <p>Cálculo de sueldos con precisión milimétrica (hora, día o mes). Generación de archivos de pago
-                        masivo y liquidaciones claras.</p>
+                    <div class="card-icon" style="color: var(--color-accent);"><i
+                            class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Gestión Integral de Nómina</h3>
+                    <p>Garantizamos el cálculo preciso de sueldos (diarios, mensuales y horas extra). Generamos tus
+                        archivos de pago masivo y liquidaciones con total <strong>transparencia y puntualidad</strong>.
+                    </p>
                 </div>
 
                 <div class="card">
-                    <div class="card-icon" style="color: var(--color-accent);"><i class="fas fa-file-signature"></i>
+                    <div class="card-icon" style="color: var(--color-accent);"><i class="fas fa-file-contract"></i>
                     </div>
-                    <h3>Legal Laboral</h3>
-                    <p>Revisar contratos y temas relacionados con la DT.</p>
+                    <h3>Cumplimiento y Asesoría Laboral</h3>
+                    <p>Blindamos tu empresa. Redacción y revisión experta de contratos y anexos, asegurando el
+                        cumplimiento total de las normativas de la <strong>Dirección del Trabajo (DT)</strong>.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon" style="color: var(--color-accent);"><i class="fas fa-calculator"></i></div>
-                    <h3>Finiquitos y Leyes Sociales</h3>
-                    <p>Cálculo exacto de finiquitos y vacaciones proporcionales. Nos aseguramos que pagues lo justo, ni
-                        un peso más ni menos.</p>
+                    <h3>Finiquitos y Obligaciones Sociales</h3>
+                    <p>Cálculos transparentes de términos de contrato y vacaciones proporcionales. Aseguramos pagos
+                        justos y ajustados a la ley para <strong>evitar conflictos</strong> futuros.</p>
                 </div>
 
                 <div class="card">
-                    <div class="card-icon" style="color: var(--color-accent);"><i class="fas fa-gavel"></i></div>
-                    <h3>Conexión PreviRed (F30/F31)</h3>
-                    <p>Generación y carga automática de archivos para PreviRed, AFC y Cajas de Compensación. Emisión de
-                        certificados F30-1 al instante.</p>
+                    <div class="card-icon" style="color: var(--color-accent);"><i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Integración Total con PreviRed</h3>
+                    <p>Automatizamos la carga de archivos para <strong>PreviRed</strong>, AFC y Cajas. Obtén tus
+                        certificados F30-1 al instante y mantén tus obligaciones previsionales al día.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon" style="color: var(--color-accent);"><i class="fas fa-user-nurse"></i></div>
-                    <h3>Declaraciones Juradas (DJ1887)</h3>
-                    <p>Preparación impecable de la Declaración Jurada 1887 y certificados de sueldos anuales para el
-                        cumplimiento tributario de tus empleados.</p>
+                    <h3>Gestión Tributaria Anual (DJ1887)</h3>
+                    <p>Presentación impecable de tus Declaraciones Juradas ante el <strong>SII</strong>. Preparamos los
+                        certificados de sueldos anuales para el perfecto cumplimiento tributario de tu equipo.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon" style="color: var(--color-accent);"><i class="fas fa-user-shield"></i></div>
+                    <h3>Asesoría Personalizada</h3>
+                    <p>¿Tienes un <strong>caso complejo</strong>? Nuestros expertos están listos para analizar tu
+                        situación particular y ofrecerte soluciones a medida.</p>
                 </div>
 
 
@@ -163,7 +173,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Contabilidad CMP.</p>
+                <p>&copy; 2024 Contabilidad CMP. Todos los derechos reservados. | Diseñado por <strong>Interfaz
+                        360</strong></p>
             </div>
         </div>
     </footer>

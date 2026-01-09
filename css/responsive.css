@@ -1,0 +1,136 @@
+/* Responsive Design - Contabilidad CMP */
+
+/* Mobile Navigation Toggle (Hamburger) */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    padding: 0.5rem;
+}
+
+/* Tablet & Mobile Styles */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    .nav-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: var(--header-height);
+        /* Matches header height */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 80%;
+        /* Better touch targets on mobile menu */
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 4rem 1rem;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    /* General Sections */
+    .section {
+        padding: 3rem 0;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        /* Smaller section titles */
+    }
+
+    /* Banner Operacion Renta */
+    /* Overriding inline styles might be tricky without !important or specific selectors, 
+       but we can target by ID if we add one, or generic containers. 
+       Assuming the banner is a section or div in index.html */
+
+    .cta-banner-content h2 {
+        font-size: 1.8rem !important;
+    }
+
+    /* Card Grids */
+    .card-grid {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    /* Nosotros Page Specifics */
+    /* Fix for flex layouts in history section */
+    .nosotros-flex-section {
+        flex-direction: column !important;
+    }
+
+    .nosotros-flex-section>div {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        /* Stack footer columns */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    /* WhatsApp */
+    .whatsapp-widget {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-chat-bubble {
+        width: 300px;
+        /* Slightly smaller */
+        right: -20px;
+        /* Adjust alignment relative to button */
+        bottom: 70px;
+    }
+}

@@ -17,6 +17,7 @@ body {
     background-color: var(--color-bg-body);
     color: var(--color-text-main);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 h1,
@@ -196,7 +197,7 @@ img {
 /* Hero Section */
 .hero {
     position: relative;
-    background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(30, 58, 138, 0.92) 100%),
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 58, 138, 0.80) 100%),
         url('../assets/images/Negocio mesa con 2 personas.jpg') center/cover no-repeat;
     color: white;
     padding: 8rem 0;

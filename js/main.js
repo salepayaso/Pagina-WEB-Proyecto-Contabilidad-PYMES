@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Contabilidad CMP Website initialized');
 
+    // Force scroll to top on refresh
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     // WhatsApp Chat Widget functionality
     const whatsappBtn = document.getElementById('whatsappBtn');
     const whatsappBubble = document.getElementById('whatsappBubble');
@@ -24,6 +30,43 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchIndicadores();
 
     // Start Clock
+    // Mobile Navigation Toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            // Change icon functionality could go here if using FontAwesome icon switch
+            const icon = navToggle.querySelector('i');
+            if (icon) {
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        });
+    }
+
+    // Close menu when clicking a link
+    if (navLinks) {
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                if (navToggle) {
+                    const icon = navToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+    }
+
     updateClock();
     setInterval(updateClock, 1000);
 });
