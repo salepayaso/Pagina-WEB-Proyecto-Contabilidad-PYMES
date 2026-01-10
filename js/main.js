@@ -132,3 +132,55 @@ function renderIndicadores(data, uf, utm, dolar) {
     if (data.utm) utm.innerHTML = `UTM: ${formatCLP(data.utm.valor)}`;
     if (data.dolar) dolar.innerHTML = `Dólar: ${formatCLP(data.dolar.valor)}`;
 }
+
+// Contact Form Handling (AJAX)
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+    const feedbackBox = document.getElementById('form-feedback');
+    const btnNewMessage = document.getElementById('btn-new-message');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.innerText = 'Enviando...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success
+                    contactForm.style.display = 'none';
+                    if (feedbackBox) feedbackBox.style.display = 'block';
+                    contactForm.reset();
+                } else {
+                    alert('Hubo un error al enviar el mensaje. Por favor intenta denuevo.');
+                }
+            } catch (error) {
+                console.error('Form Error:', error);
+                alert('Hubo un error de conexión.');
+            } finally {
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
+
+    if (btnNewMessage) {
+        btnNewMessage.addEventListener('click', () => {
+            if (feedbackBox) feedbackBox.style.display = 'none';
+            if (contactForm) contactForm.style.display = 'grid';
+        });
+    }
+});

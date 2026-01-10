@@ -69,84 +69,63 @@
             <!-- Flex Container for Desktop -->
             <div style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: center;">
                 <!-- Contact Info Column -->
-                <div style="flex: 1; min-width: 300px; max-width: 500px;">
-                    <div style="background-color: var(--color-bg-light); padding: 2rem; border-radius: 8px;">
-                        <h3 style="margin-bottom: 2rem;">Información de Contacto</h3>
+                <div class="contact-info-card">
+                    <h3 style="margin-bottom: 2rem;">Información de Contacto</h3>
 
-                        <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                            <i class="fas fa-user" style="color: var(--color-primary); font-size: 1.5rem;"></i>
-                            <div>
-                                <strong>Contacto Principal</strong>
-                                <p>Carlos Maturana<br><small style="color: var(--color-text-light);">Empresa:
-                                        contabilidadcmp</small></p>
-                            </div>
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <strong>Contacto Principal</strong>
+                            <p>Carlos Maturana<br><small>Empresa: contabilidadcmp</small></p>
                         </div>
+                    </div>
 
-
-
-                        <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                            <i class="fas fa-phone" style="color: var(--color-primary); font-size: 1.5rem;"></i>
-                            <div>
-                                <strong>Teléfono</strong>
-                                <p>+56 9 7600 4926</p>
-                            </div>
-                        </div>
-
-                        <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem;">
-                            <i class="fas fa-envelope" style="color: var(--color-primary); font-size: 1.5rem;"></i>
-                            <div>
-                                <strong>Correo Electrónico</strong>
-                                <p>contacto@contabilidadcmp.cl</p>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; gap: 1rem;">
-                            <i class="fas fa-clock" style="color: var(--color-primary); font-size: 1.5rem;"></i>
-                            <div>
-                                <strong>Horario de Atención</strong>
-                                <p>Lunes a Viernes<br>09:00 am - 18:00 pm</p>
-                            </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Horario de Atención</strong>
+                            <p>Lunes a Viernes<br>09:00 am - 18:00 pm</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <div style="flex: 1; min-width: 300px; max-width: 500px;">
-                    <!-- FORMSPREE INTEGRATION: Replace with your unique Formspree ID -->
-                    <form action="https://formspree.io/f/xdakzvvq" method="POST"
-                        style="display: grid; gap: 1.5rem; background: white; padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-sm); border: 1px solid #e5e7eb;">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                <div class="contact-form-card">
+                    <!-- Feedback Message Container -->
+                    <div id="form-feedback" class="form-feedback" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>¡Mensaje Enviado!</h3>
+                        <p>Gracias por contactarnos. Te responderemos a la brevedad.</p>
+                        <button id="btn-new-message" class="btn btn-outline">Enviar otro mensaje</button>
+                    </div>
+
+                    <!-- FORMSPREE INTEGRATION -->
+                    <form id="contactForm" action="https://formspree.io/f/xdakzvvq" method="POST">
+                        <div class="form-grid">
                             <div>
-                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nombre
-                                    Completo</label>
-                                <input type="text" name="nombre" placeholder="Tu nombre" required
-                                    style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                                <label>Nombre Completo</label>
+                                <input type="text" name="nombre" placeholder="Tu nombre" required>
                             </div>
                             <div>
-                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Empresa</label>
-                                <input type="text" name="empresa" placeholder="Nombre de tu empresa"
-                                    style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                                <label>Empresa</label>
+                                <input type="text" name="empresa" placeholder="Nombre de tu empresa">
                             </div>
                         </div>
 
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div class="form-grid">
                             <div>
-                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Correo
-                                    Electrónico</label>
-                                <input type="email" name="email" placeholder="ejemplo@correo.com" required
-                                    style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                                <label>Correo Electrónico</label>
+                                <input type="email" name="email" placeholder="ejemplo@correo.com" required>
                             </div>
                             <div>
-                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Teléfono</label>
-                                <input type="tel" name="telefono" placeholder="+56 9 ..."
-                                    style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                                <label>Teléfono</label>
+                                <input type="tel" name="telefono" placeholder="+56 9 ...">
                             </div>
                         </div>
 
                         <div>
-                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Asunto</label>
-                            <select name="asunto"
-                                style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;">
+                            <label>Asunto</label>
+                            <select name="asunto">
                                 <option>Consulta General</option>
                                 <option>Contabilidad Mensual</option>
                                 <option>Recursos Humanos</option>
@@ -158,9 +137,9 @@
                         </div>
 
                         <div>
-                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Mensaje</label>
-                            <textarea rows="5" placeholder="¿En qué podemos ayudarte?"
-                                style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px;"></textarea>
+                            <label>Mensaje</label>
+                            <textarea name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?"
+                                required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
