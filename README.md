@@ -1,65 +1,48 @@
 # Proyecto Web Contabilidad CMP
 
-Sitio web corporativo moderno para **Contabilidad CMP**, optimizado para SEO local y diseñado para convertir visitantes en clientes a través de WhatsApp.
+Sitio web corporativo moderno para **Contabilidad CMP**, desarrollado con estándares web actuales y optimizado para el rendimiento y la conversión de clientes.
 
 ## 🚀 Características Principales
 
-*   **Diseño Profesional:** Estilo visual moderno con imágenes de alta calidad y paleta de colores corporativa.
-*   **Widget de WhatsApp Interactivo:** Funcionalidad de chat integrada en todas las páginas para contacto directo sin branding de terceros.
+*   **Diseño Profesional:** Interfaz limpia y moderna ("Premium") con paleta de colores corporativa.
+*   **Formulario de Contacto Avanzado:** Integración con Formspree y validación con feedback en tiempo real (AJAX), sin recargas de página.
+*   **Indicadores Económicos:** Consumo de API (mindicador.cl) para mostrar UF, UTM y Dólar actualizados en tiempo real.
+*   **Widget de WhatsApp:** Chat flotante integrado para facilitar la comunicación directa con clientes.
 *   **Optimización SEO:**
-    *   Etiquetas Meta (Título, Descripción, Keywords) optimizadas para "Contador en La Granja".
-    *   Open Graph tags para compartir profesionalmente en Redes Sociales.
-    *   `sitemap.xml` y `robots.txt` listos para Google.
-*   **Responsive:** Adaptado perfectamente a celulares, tablets y computadores.
-*   **Velocidad:** Código limpio HTML5/CSS3 sin dependencias pesadas.
+    *   Arquitectura semántica HTML5.
+    *   Meta etiquetas Open Graph para redes sociales.
+    *   Diseño **100% Responsive** para móviles y escritorio.
+
+## 🛠️ Tecnologías Utilizadas
+
+*   **HTML5**
+*   **CSS3** (Variables CSS, Flexbox, Grid, Animaciones)
+*   **JavaScript Vanilla** (ES6+)
+*   **Font Awesome** (Iconografía)
+*   **Google Fonts** (Tipografía)
 
 ## 📂 Estructura del Proyecto
 
 ```
 /
-├── index.html        # Portada (Propuesta de valor y servicios clave)
-├── nosotros.html     # Historia, Misión y Equipo
-├── servicios.html    # Detalle de contabilidad y tributaria
-├── rrhh.html         # Servicios de Remuneraciones (con sección de beneficios)
-├── contacto.html     # Datos de ubicación y contacto
-├── sitemap.xml       # Mapa del sitio para Google
-├── robots.txt        # Configuración para buscadores
-├── css/
-│   └── main.css      # Estilos globales y específicos
-├── js/
-│   └── main.js       # Lógica del widget de WhatsApp
-└── assets/           # Imágenes optimizadas y logos
+├── index.html        # Página de inicio
+├── nosotros.html     # Información corporativa
+├── servicios.html    # Detalle de servicios
+├── rrhh.html         # Remuneraciones y RRHH
+├── contacto.html     # Formulario y ubicación
+├── css/              # Estilos (main.css)
+├── js/               # Lógica (main.js)
+├── assets/           # Imágenes y logos
+└── vercel.json       # Configuración de despliegue
 ```
 
-## 📚 Documentación y Guías del Proyecto
+## 🚀 Despliegue
 
-Se han creado guías paso a paso para la administración de la presencia digital de la empresa:
+Este proyecto está configurado para despliegue continuo en **Vercel**.
 
-1.  **[Guía de GitHub](GUIA_GIT.md):** Cómo guardar cambios y subir el sitio a la nube.
-2.  **[Guía de Google Maps](GUIA_GOOGLE_MAPS.md):** Cómo aparecer primero en el mapa local.
-3.  **[Estrategia de Redes Sociales](GUIA_REDES_SOCIALES.md):** Qué publicar en Instagram/Facebook.
-4.  **[Recomendación Google Ads](RECOMENDACION_GOOGLE_ADS.md):** Cuándo invertir en publicidad pagada.
-5.  **[Guía de Correo Corporativo](GUIA_CORREO_CORPORATIVO.md):** Cómo tener mail `@contabilidadcmp.cl` gratis.
-67.  **[Cómo Publicar la Web](GUIA_PUBLICAR_WEB.md):** Pasos para activar el link público.
-8.  **[Oficinas Virtuales](GUIA_OFICINA_VIRTUAL.md):** Cómo proteger la dirección de tu casa.
-9.  **[Informe de Optimización](INFORME_OPTIMIZACION.md):** Guía para reducir el peso de las imágenes.
-
-## 🛠️ Cómo Editar y Publicar
-
-### Editar el Sitio
-1.  Abre la carpeta en **Visual Studio Code**.
-2.  Edita los archivos `.html` (textos) o `.css` (colores/diseño).
-3.  Para ver cambios, simplemente abre `index.html` en tu navegador.
-
-### Publicar en Internet
-El sitio está configurado para **GitHub Pages** (Hosting Gratuito):
-1.  Sube tus cambios a GitHub:
-    ```bash
-    git add .
-    git commit -m "Descripción de cambios"
-    git push origin main
-    ```
-2.  Tu sitio se actualizará automáticamente en tu URL de GitHub Pages (o dominio personalizado si ya está configurado).
+1.  Cada `push` a la rama `main` dispara un nuevo despliegue.
+2.  Configuración personalizada en `vercel.json` para URLs limpias (Clean URLs).
+3.  Conectado a dominio personalizado `contabilidadcmp.cl`.
 
 ---
-© 2024 Contabilidad CMP. Desarrollado con estándares web modernos.
+© 2024 Contabilidad CMP. Todos los derechos reservados.
